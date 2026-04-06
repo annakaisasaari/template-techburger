@@ -19,16 +19,16 @@ To start working on your team's project, follow these steps:
 
 3. Clone to Local: Open your terminal and clone your team's new repository:
 
-  git clone <your-repo-url>
+    git clone <your-repo-url>
 
 4. Install Dependencies:
 
-  cd <project-folder>
-  npm install
+    cd <project-folder>
+    npm install
 
 5. Run Development Server:
 
-  npm run dev
+    npm run dev
 
 📂 Project Structure
 
