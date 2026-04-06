@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+🍔 TechBurger - Starter Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the official starter template for the Online Environment Tools (TT00BI69) course project. It is designed to get you up and running with a modern React development environment in seconds.
 
-Currently, two official plugins are available:
+🛠️ Tech Stack Included
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+React 19 (via Vite)
 
-## React Compiler
+TypeScript (for type-safe development)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Tailwind CSS 4 (for rapid UI styling)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🚀 Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+To start working on your team's project, follow these steps:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Use this Template: Click the green "Use this template" button at the top of this page and select "Create a new repository".
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Invite Teammates: Go to your new repository's Settings > Collaborators and invite your team members and the teacher.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Clone to Local: Open your terminal and clone your team's new repository:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+git clone <your-repo-url>
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+
+Install Dependencies:
+
+cd <project-folder>
+npm install
+
+
+Run Development Server:
+
+npm run dev
+
+
+📂 Project Structure
+
+src/components/: Place all your React components here.
+
+src/types.ts: Define your TypeScript interfaces here (e.g., Product).
+
+src/App.tsx: The main entry point of your application.
+
+public/: Place static assets like images or JSON data here.
+
+📝 Course Rules
+
+Git Flow: Always use feature branches (feature/component-name).
+
+No "any": Use TypeScript interfaces for all data.
+
+Atomic Commits: Commit small, logical changes with descriptive messages.
+
+Happy coding! Let's build the best burger app ever. 💻🔥
